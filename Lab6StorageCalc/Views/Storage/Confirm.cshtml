@@ -1,0 +1,30 @@
+﻿@model Lab6StorageCalc.Models.AzureStorage
+
+@{
+    ViewData["Title"] = "Confirm";
+}
+
+<h1>Confirm</h1>
+
+<div>
+    <h4>AzureStorage</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StorageGB)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StorageGB)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cost)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cost)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
